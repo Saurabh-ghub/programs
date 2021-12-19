@@ -21,12 +21,12 @@ int main(){
 
 ll n,x;
 cin>>n>>x;
-ll arr[n];
+vector<ll>arr(n);
 
 for(ll i=0;i<n;i++){
     cin>>arr[i];
 }
-ll dp[x+1];
+vector<ll> dp(x+1,0);
 for(int i=0;i<x+1;i++){
     dp[i]=0;
 }
